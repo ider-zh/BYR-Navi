@@ -17,11 +17,11 @@
         token: '{{ site.analytics.piwik.api.token }}'
     };
     var _paq = _paq || [];
-    _paq.push(["setDomains", ["*.irockbunny.com"]]);
+    _paq.push(["setDomains", ["*.iwuzhen.org"]]);
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
-        var u = "https://vps.irockbunny.com/analytics/";
+        var u = "//analytics.iwuzhen.org/";
         _paq.push(['setTrackerUrl', u + 'piwik.php']);
         _paq.push(['setSiteId', '{{ site.analytics.piwik.site_id }}']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
@@ -29,6 +29,6 @@
     })();
     </script>
     <noscript>
-        <p><img src="https://vps.irockbunny.com/analytics/piwik.php?idsite={{ site.analytics.piwik.site_id }}&rec=1" style="border:0;" alt="Piwik Analytics" /></p>
+        <p><img src="http://analytics.iwuzhen.org/piwik.php?idsite={{ site.analytics.piwik.site_id }}&rec=1" style="border:0;" alt="Piwik Analytics" /></p>
     </noscript>
 {% endif %}
