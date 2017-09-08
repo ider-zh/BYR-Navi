@@ -1,28 +1,28 @@
 analytics:
   google:
-    id: UA-100531691-1
+    id: UA-106049489-1
   piwik:
     site_id: 1
     api:
-      url: https://vps.irockbunny.com/analytics/?callback=?
-      token: 1a43153d72133b11dbed92b763142bd0
+      url: http://analytics.iwuzhen.org/?callback=?
+      token: 15d9071c7f8798dea950f579b2d8896e
 
-repository: BYR-Navi/BYR-Navi
-repository_url: https://github.com/BYR-Navi/BYR-Navi
+repository: ider-zh/BYR-Navi
+repository_url: https://github.com/ider-zh/BYR-Navi
 
 timezone: Asia/Shanghai
 lang: zh_CN
 
-name: 北邮人导航 · BYR-Navi
-alias: 北邮人导航
-author: iROCKBUNNY
-author_url: http://irockbunny.com
-organization: TEELAB
-organization_url: http://teelab.net
-description: A Navigation Website for BYR
-keywords: 北邮人导航, BYR-Navi, BYR, BUPT, Navi, Navigation
-url: http://byr-navi.com
-contact: contact[at]irockbunny[dot]com
+name: Lambdax导航 · LMD-Navi
+alias: Lambdax导航
+author: ider
+# author_url: http://irockbunny.com
+organization: LMD
+organization_url: http://lambdax.cn
+description: A Navigation Website for LMD
+keywords: Lambdax导航,  Navi, Navigation
+url: http://lambdax.cn
+contact: ider[at]lambdax[dot]cn
 
 logo: /images/logo.png
 logo_dark: /images/logo-dark.png

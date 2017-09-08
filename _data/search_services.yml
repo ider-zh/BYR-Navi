@@ -6,11 +6,45 @@
   icon: paw blue
   style: basic
 
+- id: bing
+  name: bing
+  url: http://cn.bing.com/search?q=
+  shortcut: bing
+  icon: binoculars gray
+  style: basic
+
+- id: sougou
+  name: 搜狗
+  url: http://www.sogou.com/sogou?query=
+  shortcut: 搜狗
+  style: basic
+
+- id: so
+  name: so.com
+  url: https://www.so.com/s?q=
+  shortcut: so
+  style: basic
+
 - id: google
   name: 谷歌
-  url: http://google.com/search?q=
-  shortcut: 谷歌
-  icon: google red
+  url: https://google.com/search?q=
+  shortcut: google
+  icon: google gray
+  style: basic
+
+
+- id: github
+  name: GitHub
+  url: http://github.com/search?q=
+  shortcut: github
+  icon: github gray
+  style: basic
+
+- id: stack
+  name: stack
+  url: https://stackoverflow.com/search?q=
+  shortcut: stack
+  icon: fa-stack-overflow orange
   style: basic
 
 - id: baidumap
@@ -47,10 +81,6 @@
 - id: mw
   name: Merriam-Webster
   url: https://www.merriam-webster.com/dictionary/
-
-- id: github
-  name: GitHub
-  url: http://github.com/search?q=
 
 - id: wechat
   name: 微信公众号
@@ -108,15 +138,3 @@
   suffix: "/td_0"
   shortcut: 胖次
   style: basic
-
-- id: byr
-  name: 北邮人论坛
-  url: http://search.icybee.cn/bbs/?key=
-
-- id: byrauthor
-  name: 北邮人论坛用户
-  url: http://search.lovezxp.com/?type=author&text=
-
-- id: byrarticle
-  name: 北邮人论坛文章
-  url: http://search.lovezxp.com/?type=article&text=
