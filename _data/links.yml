@@ -11,7 +11,7 @@
       url: http://wiki.lambdax.cn
 
     - name: 地址转换服务
-      style: orange
+      style: basic
       url: http://geo.lambdax.cn
 
     - name: git
@@ -23,6 +23,12 @@
       style: basic
       icon: cloud
       url: http://cloud.lambdax.cn
+
+  - category: 产品
+    links:
+    - name: 乌镇智库
+      style: orange
+      url: http://www.iwuzhen.org
 
 - section: public
   categories:
