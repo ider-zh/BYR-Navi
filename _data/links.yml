@@ -24,6 +24,18 @@
       icon: cloud
       url: http://cloud.lambdax.cn
 
+    - name: jupyter
+      style: basic
+      url: http://192.168.1.220:8888
+
+    - name: pyspider
+      style: basic
+      url: http://192.168.1.221:5000
+
+    - name: log kibana
+      style: basic
+      url: http://192.168.1.221:5601
+
   - category: 产品
     links:
     - name: 乌镇智库
