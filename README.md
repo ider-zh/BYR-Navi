@@ -1,35 +1,37 @@
-[![Build Status](https://travis-ci.org/BYR-Navi/BYR-Navi.svg)](https://travis-ci.org/BYR-Navi/BYR-Navi)
-[![Website](https://img.shields.io/website-up-down-green-red/http/byr-navi.com.svg)](http://byr-navi.com/)
-[![License](https://img.shields.io/github/license/BYR-Navi/BYR-Navi.svg)](/LICENSE)
-[![Say Thanks](https://img.shields.io/badge/Say-Thanks!-1EAEDB.svg)](https://saythanks.io/to/iROCKBUNNY)
+# LMD NAV
+> 本项目源自[BRY-NAVI](https://github.com/BYR-Navi/BYR-Navi)
 
-[![Watchers](https://img.shields.io/github/watchers/BYR-Navi/BYR-Navi.svg?style=social&label=Watch)](https://github.com/BYR-Navi/BYR-Navi/watchers)
-[![Stargazers](https://img.shields.io/github/stars/BYR-Navi/BYR-Navi.svg?style=social&label=Star)](https://github.com/BYR-Navi/BYR-Navi/stargazers)
-[![Forks](https://img.shields.io/github/forks/BYR-Navi/BYR-Navi.svg?style=social&label=Fork)](https://github.com/BYR-Navi/BYR-Navi/network)
+本项目使用 Ruby 工具 [Jekyll](http://jekyll.com.cn/) 构建的静态导航站点,项目侧重点在部署上.
 
-[![Closed Issues](https://img.shields.io/github/issues-closed/BYR-Navi/BYR-Navi.svg)](https://github.com/BYR-Navi/BYR-Navi/issues)
-[![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed/BYR-Navi/BYR-Navi.svg)](https://github.com/BYR-Navi/BYR-Navi/pulls)
+主要步骤
 
-# BYR-Navi
-A Navigation [Website](http://byr-navi.com/) for BYR
++ Ruby 环境搭建
++ 搭建支持服务 piwiki
++ 站点修改
++ 容器部署
 
-###### Powered by
-- [Semantic UI](http://semantic-ui.com/)
-- [jQuery](http://jquery.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [Shields.io](http://shields.io/)
-- [Moment.js](http://momentjs.com/)
-- [CountUp.js](http://inorganik.github.io/countUp.js/)
-- [JavaScript Cookie](https://github.com/js-cookie/js-cookie)
-- [url.js](https://github.com/websanova/js-url)
-- [ECharts](http://echarts.baidu.com/)
-- [Piwik](https://piwik.org/)
-- [GeoIP](http://www.maxmind.com)
-- [Jekyll](http://jekyllrb.com/)
-- [GitHub Pages](https://pages.github.com/)
 
-###### Forked by
-- [法林导航](http://falin.xyz/)
-- [进步英语](http://www.ejinbu.com/)
-- [奇货导航](http://fav.qidui.me/)
-- [苏菲导航](http://swufer.space/)
+## Ruby 环境搭建
+
+Ubuntu 自带 ruby, 但是安装 Gem 包会有权限和依赖问题,这个不好解决.所以本次使用 Ruby 环境管理工具 [RVM](https://ruby-china.org/wiki/rvm-guide),管理 Ruby 版本和 Gem 包.
+
+使用 RVM 安装完成 Ruby 和创建 Gem 空间后, 还需要更换一下 gem 源加速, 使用 [Ruby China](https://gems.ruby-china.org/)
+在项目目录下使用 `gem install -g` 完成依赖安装
+
+使用 `jekyll server` 启动服务, 预览当前站点
+jekyll 在项目根目录下生成一个 _site 文件夹,包含静态站点的所有文件
+
+## 搭建支持服务 piwiki
+
+piwiki 是一个开源的流量统计服务, 使用 PHP 开发. 将过程包装成 [Docker镜像](https://hub.docker.com/r/ider/piwiki/),在该项目组中使用
+
+## 站点修改
+
+主要是清理修改站点上的一些内容, 使用自己的统计 key
+
+## 容器部署
+
+最后一个环节, 将站点包装到 Docker 镜像中, 使用当前目录下的 Dockerfile 完成构建
+
+一键运行
+`docker run --rm  -p 8080:80 -it ider/lmdnav
