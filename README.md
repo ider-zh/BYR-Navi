@@ -21,9 +21,9 @@ Ubuntu 自带 ruby, 但是安装 Gem 包会有权限和依赖问题,这个不好
 使用 `jekyll server` 启动服务, 预览当前站点
 jekyll 在项目根目录下生成一个 _site 文件夹,包含静态站点的所有文件
 
-## 搭建支持服务 piwiki
+## 搭建支持服务 Piwiki
 
-piwiki 是一个开源的流量统计服务, 使用 PHP 开发. 将过程包装成 [Docker镜像](https://hub.docker.com/r/ider/piwiki/),在该项目组中使用
+Piwiki 是一个开源的流量统计服务, 使用 PHP 开发. 将过程包装成 [Docker镜像](https://hub.docker.com/r/ider/piwiki/),在该项目组中使用
 
 ## 站点修改
 
