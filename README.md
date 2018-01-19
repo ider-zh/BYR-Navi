@@ -1,12 +1,12 @@
 # LMD NAV
-> 本项目源自[BRY-NAVI](https://github.com/BYR-Navi/BYR-Navi)
+> 本项目源自[BYR-NAVI](https://github.com/BYR-Navi/BYR-Navi)
 
 本项目使用 Ruby 工具 [Jekyll](http://jekyll.com.cn/) 构建的静态导航站点,项目侧重点在部署上.
 
 主要步骤
 
 + Ruby 环境搭建
-+ 搭建支持服务 piwiki
++ 搭建支持服务 Piwiki
 + 站点修改
 + 容器部署
 
